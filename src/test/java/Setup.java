@@ -5,8 +5,9 @@ import org.testng.annotations.BeforeTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
-public class AppLaunch {
+public class Setup {
     public AndroidDriver driver;
     @BeforeTest
     public AndroidDriver setUp() throws InterruptedException, MalformedURLException {
@@ -19,7 +20,7 @@ public class AppLaunch {
         cap.setCapability("autoGrantPermissions", true);
         URL url=new URL("http://127.0.0.1:4723/wd/hub");
         driver=new AndroidDriver(url,cap);
-        Thread.sleep(1000);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
     @AfterTest

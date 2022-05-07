@@ -2,7 +2,7 @@
 
     <test name="Calculator app automation">
         <classes>
-            <class name="TestCase"/>
+            <class name="PageCalculation"/>
         </classes>
     </test>
 

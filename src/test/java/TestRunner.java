@@ -3,11 +3,11 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class TestRunner extends AppLaunch {
+public class TestRunner extends Setup {
     @Test
     public void runTest() throws IOException, InterruptedException {
-        TestCase testCase=new TestCase(driver);
-        String result= testCase.openApp();
+        PageCalculation testCase=new PageCalculation(driver);
+        String result= testCase.doSum();
         Assert.assertEquals(result,"13");
 
     }
