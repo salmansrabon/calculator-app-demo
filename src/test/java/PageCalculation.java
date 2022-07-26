@@ -20,6 +20,7 @@ public class PageCalculation {
         PageFactory.initElements(new AppiumFieldDecorator(driver), this);
     }
     public String doSum() throws InterruptedException, IOException {
+        Thread.sleep(3000);
         btn_8.click();
         btnPlus.click();
         btn_5.click();
