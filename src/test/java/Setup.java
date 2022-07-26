@@ -14,7 +14,7 @@ public class Setup {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("deviceName", "My Device");
         cap.setCapability("platformName", "Android");
-        cap.setCapability("uuid", "672125e00305");
+        cap.setCapability("uuid", "ZY3227PBBN");
         cap.setCapability("appPackage", "com.google.android.calculator");
         cap.setCapability("appActivity", "com.android.calculator2.Calculator");
         cap.setCapability("autoGrantPermissions", true);
