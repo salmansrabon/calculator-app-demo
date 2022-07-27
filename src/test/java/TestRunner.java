@@ -10,6 +10,5 @@ public class TestRunner extends Setup {
         PageCalculation testCase=new PageCalculation(driver);
         String result= testCase.doSum();
         Assert.assertEquals(result,"13");
-
     }
 }
