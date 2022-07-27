@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
-//Test runner
+
 @Test
 public class TestRunner extends Setup {
     @Test
